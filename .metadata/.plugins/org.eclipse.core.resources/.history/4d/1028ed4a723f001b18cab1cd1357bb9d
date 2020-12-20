@@ -1,0 +1,36 @@
+package task1;
+
+import java.util.Scanner;
+
+public class sagar 
+{
+	public static void main(String[] args) 
+	{
+		Scanner kb = new Scanner(System.in);
+		int b = kb.nextInt();
+		int k = kb.nextInt();
+		
+		int[] arr = new int[b];
+		
+		for (int i = 0; i < arr.length; i++) 
+		{
+			System.out.print("=");
+			arr[i]=kb.nextInt();
+		}
+		
+		int ecount = 0;
+		
+		for (int i = 0; i < arr.length; i++) 
+		{
+			if (arr[i]%2==0)
+			{
+				ecount++;
+			}
+		}
+		System.out.println(ecount);
+		int ocount = arr.length-ecount;
+		System.out.println(arr.length-ecount);
+		
+		
+	}
+}

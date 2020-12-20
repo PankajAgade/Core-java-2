@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;q_01&apos; to &apos;q_02&apos;&#x0D;&#x0A;- Original project: &apos;Collections Sorting HW&apos;&#x0D;&#x0A;- Original element: &apos;Collections Sorting HW/src/q_01&apos;&#x0D;&#x0A;- Renamed element: &apos;Collections Sorting HW/src/q_02&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;q_01&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;q_01" name="q_02" qualified="false" references="true" stamp="1606898852708" textual="false" version="1.0"/>
+</session>

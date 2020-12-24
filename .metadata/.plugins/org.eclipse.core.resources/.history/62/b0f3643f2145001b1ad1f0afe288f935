@@ -1,0 +1,49 @@
+package appRating;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class RatingMain 
+{
+	public static void main(String[] args)
+	{
+		Ratting obj = new Ratting();
+		Scanner kb = new Scanner(System.in);
+		System.out.print("Enter the user : ");
+		int n = kb.nextInt();
+		
+		kb.nextLine();
+		
+			System.out.print("Enter app and rating : ");
+			String s = kb.nextLine();	
+		
+		
+		String[] arr = s.split(",");
+		
+		for (int i = 0; i < arr.length; i++) 
+		{
+			String[] two = arr[i].split(" ");
+			int l = Integer.parseInt(two[1]);
+			obj.putNewRating(two[0], l);
+		}
+		
+		int count=0;
+		ArrayList<String> app = new ArrayList<String>();
+		for (int i = 0; i < obj.list.size(); i++) 
+		{
+			boolean flag = true;
+			for (int j = i; j < app.size(); j++) 
+			{
+				if (obj.list.get(i).appName.compareToIgnoreCase(app.get(j))==0)
+				{
+					flag = false;
+				}
+				
+			}
+			if (flag)
+			{
+				System.out.println("*** "+obj.list.get(i).appName);
+			}
+		}
+	}
+}

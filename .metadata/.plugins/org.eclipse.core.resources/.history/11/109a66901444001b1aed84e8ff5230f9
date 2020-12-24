@@ -1,0 +1,29 @@
+package task1;
+
+public class LargestElement 
+{
+	public static void main(String[] args) 
+	{
+		int[] arr1 = {1,28,8,4,6,8,43,4};
+		int[] arr2 = {56,5,3,4,16,83,4,6,88,4};
+		int max = Integer.MIN_VALUE;
+		
+		for (int i : arr1)
+		{
+			if (max<i) 
+			{
+				max = i;
+			}
+		}
+		
+		for (int i : arr2)
+		{
+			if (max<i) 
+			{
+				max = i;
+			}
+		}
+		
+		System.out.println("Max => "+max);
+	}
+}

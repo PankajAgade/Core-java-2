@@ -1,0 +1,10 @@
+package task1;
+
+public class rough 
+{
+	static int[] arr = {8,9,5,3,3,9,1,2,6,0};
+	public static void main(String[] args) 
+	{
+		
+	}
+}

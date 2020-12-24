@@ -1,0 +1,70 @@
+package task1;
+
+public class SmallIinArray 
+{
+	static int[] arr1 = {3,4,8,5,2};
+	static int[] arr2 = {3,4,9,8,2};
+	
+	static int[] index = new int[2];
+	static boolean flag = true;
+	public static void main(String[] args)
+	{
+		
+		sort(index);
+		
+		for (int i = 0; i < arr1.length; i++) 
+		{
+			flag = true;
+			checkinarr2(arr1[i],0);
+			if (flag) 
+			{
+				System.out.println(arr[i]);
+				break;
+			}
+		}
+	}
+
+	private static void checkinarr2(int ele, int j) 
+	{
+		if (ele==arr2[j])
+		{
+			flag = false;
+		}
+		if (j<arr2.length-1)
+		{
+			checkinarr2(ele, ++j);
+		}
+	}
+
+	private static void sort(int[] index) 
+	{
+		if(arr1[index[0]]>arr1[index[1]])
+		{
+			int temp = arr1[index[0]];
+			arr1[index[0]] = arr1[index[1]];
+			arr1[index[1]] = temp;
+		}
+		if(index[0]<arr1.length-1 || index[1]<arr1.length-1)
+		{
+			sort(getindex(index));
+		}
+	}
+
+	private static int[] getindex(int[] index) 
+	{
+		if(index[1]<arr1.length-1)
+		{
+			index[1]++;
+			return index;
+		}
+		else
+		{
+			index[0]++;
+			if (index[1]!=arr1.length-1)
+			{
+				index[1]=index[0]+1;
+			}
+			return index;
+		}
+	}
+}

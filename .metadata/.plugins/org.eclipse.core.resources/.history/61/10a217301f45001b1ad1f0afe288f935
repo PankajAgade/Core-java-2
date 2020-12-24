@@ -1,0 +1,28 @@
+package appRating;
+
+public class Ratting implements RatingStatisticsCollectors
+{
+	
+	
+
+	@Override
+	public void putNewRating(String app, int rating)
+	{
+		
+	}
+
+	@Override
+	public double getAverageRating(String app) 
+	{
+		
+		return 0;
+	}
+
+	@Override
+	public int getRatingcount(String app) 
+	{
+		
+		return 0;
+	}
+	
+}

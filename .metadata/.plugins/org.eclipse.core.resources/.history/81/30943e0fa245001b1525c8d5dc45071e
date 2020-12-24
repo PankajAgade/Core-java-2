@@ -1,0 +1,22 @@
+package task1;
+
+public class rough 
+{
+	static int[] arr = {8,9,5,3,3,9,1,2,6,0};
+	public static void main(String[] args) 
+	{
+		sort(arr,0);
+	}
+	
+	private static void sort(int[] arr2,int i) 
+	{
+		if (i<arr.length)
+		{
+			System.out.print(arr2[i]);
+			sort(arr2, ++i);
+		}
+	}
+	
+	
+	
+}

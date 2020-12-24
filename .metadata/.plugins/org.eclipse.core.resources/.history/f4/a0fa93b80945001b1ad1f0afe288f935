@@ -1,0 +1,23 @@
+package Choclate;
+
+public class ChoclateBox 
+{
+	int serialNo;
+	String chocolateName;
+	int price;
+	
+	public ChoclateBox(int serialNo, String chocolateName, int price) 
+	{
+		super();
+		this.serialNo = serialNo;
+		this.chocolateName = chocolateName;
+		this.price = price;
+	}
+	
+	@Override
+	public String toString() {
+		return serialNo + ". " + chocolateName + ", " + price;
+	}
+	
+	
+}

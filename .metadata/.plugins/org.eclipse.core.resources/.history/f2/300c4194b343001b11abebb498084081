@@ -1,0 +1,66 @@
+package task1;
+
+public class E12Elements 
+{
+	public static void main(String[] args) 
+	{
+		int[] arr = {5,6,3,12,1,2,8,9,10,4,11,7}; //5,6,3,   12,1,2,   8,9,10,   4,11,7
+		
+		for (int i : arr) 
+		{
+			System.out.print(i+" ");
+		}
+		System.out.println();
+		
+		int start = 0;
+		int endstart = arr.length-3;
+		for (int i = 0; i < 1; i++)//(arr.length/3)/2
+		{
+			int min = Integer.MAX_VALUE;
+			int minindex = 0;
+			int s = start;
+			int e = endstart;
+			int ind = start;
+			for (int l = 0; l < 6; l++)
+			{
+				
+				for (int j = s; j < start+3; j++)
+				{
+					if (min>arr[j])
+					{
+						min = arr[j];
+						minindex=j;
+					}
+				}
+				for (int k = e; k < endstart+3; k++)
+				{
+					if (min>arr[k])
+					{
+						min = arr[k];
+						minindex=k;
+					}
+				}
+				
+				System.out.println("min => "+min);
+				
+				if (ind<start+3) 
+				{
+					int temp = arr[ind];
+					arr[ind] = arr[minindex];
+					arr[minindex] = temp;
+					ind++;
+					s++;
+				}
+				
+			}
+			start = start+3;
+			endstart = endstart-3;			
+		}
+		
+		for (int i : arr) 
+		{
+			System.out.print(i+" ");
+		}
+		System.out.println();
+	}
+}

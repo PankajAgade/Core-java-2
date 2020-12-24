@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;q_04&apos; to &apos;q_05&apos;&#x0D;&#x0A;- Original project: &apos;Inheritance_CW&apos;&#x0D;&#x0A;- Original element: &apos;Inheritance_CW/src/q_04&apos;&#x0D;&#x0A;- Renamed element: &apos;Inheritance_CW/src/q_05&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;q_04&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;q_04" name="q_05" qualified="false" references="true" stamp="1606209714281" textual="false" version="1.0"/>
+</session>

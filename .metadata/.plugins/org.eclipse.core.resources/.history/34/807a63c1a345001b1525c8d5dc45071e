@@ -1,0 +1,39 @@
+package task1;
+
+public class rough 
+{
+	static int[] arr = {8,9,5,3,3,9,1,2,6,0};
+	public static void main(String[] args) 
+	{
+		sort(arr,0,"sort");
+		
+	}
+	static int min = Integer.MAX_VALUE;
+	static int mini = 0;
+	static int index = 0;
+	private static void sort(int[] arr2, int i, String s) 
+	{
+		if(s.compareToIgnoreCase("sort")==0)
+		{
+			if (i<arr.length)
+			{
+				System.out.println(arr2[i]+"=");
+				
+				sort(arr2,i,"min");
+				sort(arr2, ++i,"sort");
+			}
+		}
+		if(s.compareToIgnoreCase("min")==0)
+		{
+			if (i<arr.length)
+			{
+				System.out.print(arr[i]+" ");
+				sort(arr2, ++i,"min");
+			}
+		}
+	}
+	
+	
+	
+	
+}

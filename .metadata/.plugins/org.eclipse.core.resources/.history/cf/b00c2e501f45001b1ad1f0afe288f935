@@ -1,0 +1,31 @@
+package appRating;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Ratting implements RatingStatisticsCollectors
+{
+	
+	List<Rateclass> list = new ArrayList<Rateclass>();
+
+	@Override
+	public void putNewRating(String app, int rating)
+	{
+		
+	}
+
+	@Override
+	public double getAverageRating(String app) 
+	{
+		
+		return 0;
+	}
+
+	@Override
+	public int getRatingcount(String app) 
+	{
+		
+		return 0;
+	}
+	
+}

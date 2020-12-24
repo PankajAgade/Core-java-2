@@ -1,0 +1,9 @@
+package task1;
+// suppose there is a character array of a url. replace all spaces with '%20' and all '/' with '%2F'. display the output.  
+public class URL 
+{
+	public static void main(String[] args) 
+	{
+		
+	}
+}

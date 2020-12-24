@@ -1,0 +1,54 @@
+package Choclate;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+import task1.m;
+
+public class Choclate 
+{
+	
+	public static void main(String[] args) 
+	{
+		Scanner kb = new Scanner(System.in);
+		ArrayList<ChoclateBox> list = new ArrayList<ChoclateBox>();
+		list.add(new ChoclateBox(1, "Ghirardelli", 35));
+		list.add(new ChoclateBox(2, "Patchi", 25));
+		list.add(new ChoclateBox(3, "Galaxy", 40));
+		list.add(new ChoclateBox(4, "Cadbury", 30));
+		list.add(new ChoclateBox(5, "Ferrero Rocher", 40));
+		
+		for (int i = 0; i < list.size(); i++) 
+		{
+			System.out.println(list.get(i));
+		}
+		
+		int total = 0;
+		
+		System.out.print("Enter the choclate Sr no. : ");
+		int choice = kb.nextInt();
+		choice--;
+		
+		kb.hasNextLine();
+		String s = kb.nextLine();
+		
+		System.out.println("1.confirmation of the order.");
+		System.out.println("2.cancel or Change Order.");
+		
+		
+		String[] M = s.split(",");	
+		
+		for (int i = 0; i < M.length; i++)
+		{
+			total = total + Integer.parseInt(M[i]);
+		}
+		
+		if (list.get(choice).price<=total) 
+		{
+			System.out.println(list.get(choice).chocolateName+" | "+(total-list.get(choice).price));
+		}
+		
+ 	}
+	
+	
+}

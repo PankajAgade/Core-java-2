@@ -1,0 +1,24 @@
+package task1;
+
+public class Re 
+{
+	static int i = 0;
+	static int j = 0;
+	static int imax = 5;
+	static int jmax = 5;
+	
+	public static void main(String[] args) 
+	{
+		print();
+	}
+
+	private static void print()
+	{
+		if (i<=imax && j<=jmax)
+		{
+			
+			System.out.println((i)+" "+(j));
+			print();
+		}
+	}	
+}

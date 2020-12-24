@@ -1,0 +1,30 @@
+package task1;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class TwoDarray 
+{
+	public static void main(String[] args) 
+	{
+		Scanner kb = new Scanner(System.in);
+		List<ArrayList<Integer>> list = new ArrayList<ArrayList<Integer>>();
+		
+		System.out.print("Row : ");
+		int row = kb.nextInt();
+		
+		System.out.print("Colummn : ");
+		int col = kb.nextInt();
+		
+		for (int i = 0; i < row; i++) 
+		{
+			list.add(new ArrayList<Integer>);
+			for (int j = 0; j < col; j++) 
+			{
+				
+			}
+		}
+		
+	}
+}

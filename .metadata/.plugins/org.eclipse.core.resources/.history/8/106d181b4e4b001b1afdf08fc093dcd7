@@ -1,0 +1,34 @@
+package array;
+
+public class Try 
+{
+	public static void main(String[] args) 
+	{
+		int size = 3;
+		
+		int[] arr = new int[size];
+		
+		pairs(arr,arr.length-1);
+	}
+
+	private static void pairs(int[] arr, int i) 
+	{
+		for(int p: arr)
+		{
+			System.out.print(p+" ");
+		}
+		System.out.println();
+		
+		if (arr[i]<arr.length)
+		{
+			arr[i]++;
+			pairs(arr, i);
+		}
+		else
+		{
+			i=0;
+			pairs(arr, --i);
+		}
+		
+	}
+}

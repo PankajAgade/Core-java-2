@@ -1,0 +1,37 @@
+package array;
+
+public class Try2 
+{
+	public static void main(String[] args) 
+	{
+		int[] arr = {1,2,3};
+		
+		combinationUtil(arr, arr, 0, arr.length-1, 0, arr.length);
+		
+	}
+	
+	static void combinationUtil(int arr[], int data[], int start, int end, int index, int r) 
+	{
+		System.out.println("hi");
+
+		if (index == r) 
+		{
+			for (int j = 0; j < r; j++)
+			{
+				System.out.print(data[j] + " ");
+			}
+			System.out.println("");
+			return;
+		}
+		
+		// replace index with all possible elements. The condition 
+		// "end-i+1 >= r-index" makes sure that including one element 
+		// at index will make a combination with remaining elements 
+		// at remaining positions 
+		for (int i = start; i <= end && end - i + 1 >= r - index; i++) 
+		{
+			data[index] = arr[i];
+			combinationUtil(arr, data, i + 1, end, index + 1, r);
+		}
+} 
+}

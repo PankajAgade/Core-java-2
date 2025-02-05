@@ -1,0 +1,11 @@
+package test;
+
+public class Solution7 
+{
+	public static void main(String[] args) 
+	{
+		int[] arr = {21,6,5,46,8,3,84,1,98,6};
+		
+		findSecondLargest(arr);
+	}
+}

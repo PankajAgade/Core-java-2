@@ -1,0 +1,27 @@
+package test;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Solution9 
+{
+	public static void main(String[] args) 
+	{
+		List<String> list = new ArrayList<String>();
+		list.add("AREA");
+		list.add("BALL");
+		list.add("DEAR");
+		list.add("LADY");
+		list.add("LEAD");
+		list.add("YARD");
+		
+		for (int k = 0; k < list.size(); k++) // get one string
+		{
+			System.out.println(list.get(k));
+		}
+		
+		
+		
+		
+	}
+}

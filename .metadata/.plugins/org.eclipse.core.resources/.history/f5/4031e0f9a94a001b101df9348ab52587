@@ -1,0 +1,33 @@
+package test;
+
+import java.util.TreeSet;
+
+public class Solution6 {
+	public static void main(String[] args) 
+	{
+		String s = "aakjkk";
+		int count = 0;
+
+		TreeSet<Integer> ts = new TreeSet<Integer>();
+		for (int i = 0; i < s.length(); i++) 
+		{
+			for (int j = i + 1; j <= s.length(); j++) 
+			{
+				String str0 = s.substring(i, j);
+				StringBuffer str = new StringBuffer(str0);
+				System.out.println(str);
+				StringBuffer rev = new StringBuffer(str);
+				rev.reverse();
+				
+				System.out.println(str+" "+rev);
+				if (str.compareTo(rev) == 0) 
+				{
+					ts.add(str.length());
+				}
+			}
+		}
+		System.out.println(ts.size());
+
+	}
+
+}

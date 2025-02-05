@@ -1,0 +1,24 @@
+package task1;
+
+public class Solution2 
+{
+	public static void main(String[] args) 
+	{
+		String s = "I am a very good engineer";
+		
+		char[] arr = s.toCharArray();
+		char[] arr1 = {'v','e','r','y'};
+		
+		
+		for (int i = 0; i < arr.length; i++) 
+		{
+			int count = 0;
+			int index = 0;
+			if(arr[i]=arr1[index])
+			{
+				
+			}
+		}
+		
+	}
+}

@@ -1,0 +1,39 @@
+package task1;
+
+public class Solution2 
+{
+	public static void main(String[] args) 
+	{
+		String s = "I am a very good engineer";
+		
+		char[] arr = s.toCharArray();
+		char[] arr1 = {'v','e','r','y'};
+		
+		boolean save = true;
+		for (int i = 0; i < arr.length; i++) 
+		{
+			int count = 0;
+			int index = 0;
+			if(arr[i]==arr1[index])
+			{
+				boolean flag = true;
+				for (int j = i; j < arr1.length; j++) 
+				{
+					if(arr[j]==arr1[index++] && flag==true)
+					{
+						count++;
+					}
+					else
+					{
+						flag = false;
+					}
+				}
+				if (count==arr1.length) 
+				{
+					
+				}
+			}
+		}
+		
+	}
+}

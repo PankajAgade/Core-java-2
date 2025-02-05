@@ -1,0 +1,99 @@
+package task1;
+
+class Solution5
+{
+  public static void main(String[] args) 
+  {
+    int[] arr1 = {3,5,8};
+    int[] arr2 = {7,10,12};
+    int[] arr3 = {6,9,14};
+
+    int arr1_len = 0;
+    int arr2_len = 0;
+    int arr3_len = 0;
+
+    for(int p: arr1)
+    {
+      arr1_len++;
+    }
+
+    for(int p: arr2)
+    {
+      arr2_len++;
+    }
+
+    for(int p: arr3)
+    {
+      arr3_len++;
+    }
+    
+    minDiffTriplet(arr1, arr2, arr3, arr1_len, arr2_len, arr3_len);
+  }
+
+   public static void minDiffTriplet(int[] arr1, int[] arr2, int[] arr3, int arr1_len,int arr2_len, int arr3_len)
+   {
+       int i = 0;
+       int j = 0;
+       int k = 0;
+
+       int diff = 10000;       
+      while(i<arr1_len && j<arr2_len && k<arr3_len )
+      {
+        int sum = 0;
+        Sum = arr1[i] + arr2[j] + arr3[k];
+
+        int max = 0;
+
+        if(arr1[i] < arr2[j] && arr2[j] > arr3[k])
+        {
+          max = arr2[j];
+        }
+        else if(arr2[j] < arr1[i] && arr1[i] > arr3[k])
+        {
+          max = arr1[i];
+        }
+        else if(arr1[i] < arr3[k] && arr3[k] > arr2[j])
+        {
+          max = arr3[k];
+        }
+
+
+        int min = 0;
+
+        if(arr1[i] > arr2[j] && arr2[j] < arr3[k])
+        {
+          min = arr2[j];
+        }
+        else if(arr2[j] > arr1[i] && arr1[i] < arr3[k])
+        {
+          min = arr1[i];
+        }
+        else if(arr1[i] > arr3[k] && arr3[k] < arr2[j])
+        {
+          min = arr3[k];
+        }
+
+      if(min == arr1[i])
+      {
+        i++;
+      }
+      else if(min == arr2[j])
+      {
+        j++;
+      }
+      else if(min == arr3[k])
+      {
+        k++;
+      }
+
+      if(diff  > (max-min))
+      {
+        diff  = max - min;
+      }
+
+      }
+
+
+   }
+   
+}

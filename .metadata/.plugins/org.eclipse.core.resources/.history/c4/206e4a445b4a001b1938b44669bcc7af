@@ -1,0 +1,15 @@
+package test;
+
+import java.util.Scanner;
+
+public class Solution3 
+{
+	public static void main(String[] args) 
+	{
+		Scanner kb = new Scanner(System.in);
+		System.out.print("Enter the size of array : ");
+		int size = kb.nextInt();
+		int[] arr = new int[size];
+		
+	}
+}

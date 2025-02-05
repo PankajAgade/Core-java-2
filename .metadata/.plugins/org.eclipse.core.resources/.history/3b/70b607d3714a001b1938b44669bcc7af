@@ -1,0 +1,40 @@
+package test;
+
+import java.util.Set;
+import java.util.TreeSet;
+
+public class Solution4 
+{
+	public static void main(String[] args) 
+	{
+		int[] arr1 ={1,2,3,4,5,6,7,8,9,9};
+		int[] arr2 =  {1,2,3,4,5,6};
+		
+		Set<Integer> set = new TreeSet<Integer>();
+		
+		int uniqe = Integer.MAX_VALUE;
+		for (int i = 0; i < arr1.length; i++) 
+		{
+			int cout1 = 0;
+			int cout2 = 0;
+			
+			if(arr1[i]!=uniqe)
+			{
+				for (int j = 0; j < arr1.length; j++) 
+				{
+					arr1[i]=uniqe;
+					if(arr1[i]==arr1[j])
+					{
+						arr1[i]=uniqe;
+						cout1++;
+					}
+				}
+			}
+			
+			int cout2 = 0;
+		}
+		
+		
+		
+	}
+}

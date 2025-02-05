@@ -1,0 +1,59 @@
+package array;
+
+public class Try 
+{
+	public static void main(String[] args) 
+	{
+		int size = 3;
+		
+		int[] arr = new int[size];
+		
+		pairs(arr,arr.length-1);
+	}
+
+	private static void pairs(int[] arr, int i) 
+	{ 
+		if (isEnd(arr)) 
+		{
+			//System.out.println(isEnd(arr));
+			for(int p: arr)
+			{
+				System.out.print(p+" ");
+			}
+			System.out.println();
+			
+			if (arr[i]<arr.length-1)
+			{
+				arr[i]++;
+				pairs(arr, arr.length-1);
+			}
+			else
+			{
+				arr[i]=0;
+				pairs(arr, --i);
+			}
+			
+		}
+	}
+
+	private static boolean isEnd(int[] arr) 
+	{
+		int count=0;
+		for (int i = 0; i < arr.length; i++) 
+		{
+			if(arr[i]==arr.length-1)
+			{
+				count++;
+			}
+		}
+		
+		if (count==arr.length) 
+		{
+			return false;
+		}
+		else
+		{
+			return true;
+		}
+	}
+}

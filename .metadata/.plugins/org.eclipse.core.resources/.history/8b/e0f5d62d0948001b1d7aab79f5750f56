@@ -1,0 +1,14 @@
+package task1;
+
+public class Solution2 
+{
+	public static void main(String[] args) 
+	{
+		String s = "pankaj";
+		
+		for(char p: s)
+		{
+			System.out.println(p);
+		}
+	}
+}

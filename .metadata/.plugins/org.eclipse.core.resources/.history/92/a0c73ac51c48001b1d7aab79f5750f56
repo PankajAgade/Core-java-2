@@ -1,0 +1,19 @@
+package task1;
+
+public class Solution3 
+{
+	public static void main(String[] args) 
+	{
+		String str1 = "mindstix";
+		String str2 = "stix";
+		
+		char[] arr1 = str1.toCharArray();
+		char[] arr2 = str2.toCharArray();
+		
+		
+		
+		
+		
+		
+	}
+}

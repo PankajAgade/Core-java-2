@@ -1,0 +1,11 @@
+package test;
+
+//Write a program to sort an array.
+
+public class Solution5 
+{
+	public static void main(String[] args) 
+	{
+		
+	}
+}

@@ -1,0 +1,30 @@
+package array;
+
+import java.util.Scanner;
+
+public class Stack 
+{
+	static int[] arr = new int[5];
+	static int top = 0;
+	public static void main(String[] args) 
+	{
+		Scanner kb = new Scanner(System.in);
+		boolean flag = true;
+		display();
+		System.out.println();
+		
+		while (flag)
+		{
+			System.out.println("1. ");
+		}
+	}
+	
+	static void display()
+	{
+		System.out.print("Stack => ");
+		for(int p: arr)
+		{
+			System.out.println();
+		}
+	}
+}

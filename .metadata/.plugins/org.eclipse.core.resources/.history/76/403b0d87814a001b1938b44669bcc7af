@@ -1,0 +1,48 @@
+package test;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Solution9 
+{
+	public static void main(String[] args) 
+	{
+		List<String> list = new ArrayList<String>();
+		list.add("AREA");
+		list.add("BALL");
+		list.add("DEAR");
+		list.add("LADY");
+		list.add("LEAD");
+		list.add("YARD");
+			
+		
+		for (int k = 0; k < list.size(); k++) // get one string
+		{
+			String s = list.get(k);
+			List<String> list2 = new ArrayList<String>();
+			System.out.println("=="+list.get(k));
+			for (int i = 1; i < s.length(); i++) 
+			{
+				for (int j = 0; j < list.size(); j++) 
+				{
+					
+					if ( s.charAt(i)==list.get(j).charAt(0)  && list.get(j).compareTo(s)!=0)
+					{
+						for (int j2 = 0; j2 < args.length; j2++) 
+						{
+							
+						}
+						
+						System.out.println(list.get(j));
+					}
+				}
+			}			
+			
+			System.out.println();
+		}
+		
+		
+		
+		
+	}
+}

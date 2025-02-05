@@ -1,0 +1,20 @@
+package array;
+
+public class Stack 
+{
+	static int[] arr = new int[5];
+	static int top = 0;
+	public static void main(String[] args) 
+	{
+		
+	}
+	
+	void display()
+	{
+		System.out.print("Stack => ");
+		for(int p: arr)
+		{
+			System.out.println();
+		}
+	}
+}

@@ -1,0 +1,36 @@
+package test;
+
+import java.util.TreeSet;
+
+public class Solution6 
+{
+	public static void main(String[] args) {
+		String s = "aaaaa";
+		int count = 0;
+		TreeSet<Integer> ts = new TreeSet<Integer>();
+		for (int i = 0; i < s.length(); i++) {
+		for (int j = i + 1; j <= s.length(); j++) {
+		String str = s.substring(i, j);
+		// System.out.println(str);
+		String rev = reverseString(str);
+		if (str.compareTo(rev) == 0) {
+		ts.add(str.length());
+		}
+		}
+		}
+		System.out.println(ts.size());
+
+		}
+
+		private static String reverseString(String str) {
+		char[] a = str.toCharArray();
+		for (int i = 0; i < a.length / 2; i++) {
+		char temp = a[i];
+		a[i] = a[a.length - i - 1];
+		a[a.length - i - 1] = temp;
+
+		}
+		str = new String(a);
+		return str;
+		}
+}

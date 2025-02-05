@@ -1,8 +1,0 @@
-package appRating;
-
-public class Rateclass
-{
-	String appName;
-	int rating;
-	
-}
